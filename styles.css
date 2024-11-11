@@ -1,68 +1,239 @@
-body{
-    background-color: #fff;
+body {
+  background-color: #fff;
+  font-family: sans-serif;
 }
 
-header nav {
-    background-color: black;
+/* Header */
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 85px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1;
 }
 
-
-nav ul{
-    list-style-type: none;
-    padding: 0;
-    column-count: 5;
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  flex: 100%;
+  display: flex;
+  background-color: black;
 }
 
-nav ul li{
-    padding: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-    color: #fff;
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
 }
 
-nav ul li #name {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
 }
 
-nav ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 2em;
+nav a {
+  display: inline-block;
+  font-size: 2rem;
+  height: 3rem;
+  line-height: 1.7;
+  text-decoration: none;
+  color: white;
 }
 
-nav ul li a:hover{
-    color: #bbbbe0;
+nav a:hover {
+  color: #bbbbe0;
 }
 
+/* Table */
 
-header table{
-    /* border-collapse: collapse; */
-    border: 3px solid black;
+#photos table {
+  height: 40em;
+  width: 100%;
+  border-collapse: collapse;
 }
 
-header table tr {
-    width: 100%;
+#photos td {
+  filter: brightness(0.25);
 }
 
-header table tr td {
-    flex: 1;
-    width: 30em;
-    height: 30em;
-    border: 3px solid red;
+#home {
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  bottom: 7.5em;
+  font-size: 4.5em;
 }
 
-header table tr #img1 {
-    background-image: url('images/codigo.jpg');
-    
-    
+/* Images */
+
+#img1 {
+  background: url("images/codigo.jpg");
 }
 
-header table tr #img2 {
-    background-image: url('images/jogos.png');
+#img2 {
+  background: url("images/jogos.jpg");
 }
 
-header table tr #img3 {
-    background-image: url('images/fpga.jpg');
+#img3 {
+  background: url("images/fpga.jpg");
+}
+
+/* Main */
+
+main {
+  margin-top: 85px;
+  padding: 20px;
+}
+
+section {
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+section h2 {
+  font-size: 3rem;
+  padding-left: 8%;
+}
+
+.wrapper {
+  display: inline-flex;
+}
+
+section p {
+  font-size: 2rem;
+  max-width: 70%;
+  max-height: stretch;
+  text-align: center;
+  align-content: center;
+  flex: 1;
+}
+
+section p a {
+  color: #000;
+}
+
+section img {
+  max-width: 40%;
+  height: auto;
+}
+
+#about p {
+  padding-right: 2%;
+  padding-left: 5%;
+}
+
+#about img {
+  margin-right: 10%;
+}
+
+#hobbies p {
+  padding-right: 5%;
+  padding-left: 2%;
+}
+
+#hobbies img {
+  margin-left: 10%;
+}
+
+#projects dl {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#projects dl dt {
+  font-size: 2rem;
+}
+
+#projects dl dd {
+  font-size: 1.5rem;
+  margin: 20px;
+  max-width: 60%;
+  max-height: stretch;
+  text-align: center;
+  align-content: center;
+  flex: 1;
+}
+
+#projects dl img {
+  margin: 20px;
+  max-width: 40%;
+  height: auto;
+}
+
+#projects #gif {
+  max-width: 100%;
+  height: auto;
+}
+
+#projects dl a {
+  font-weight: bold;
+  color: #6e6be3;
+}
+
+#projects dl abbr {
+  text-decoration: none;
+  color: #224;
+}
+
+#projects dl abbr:hover {
+  color: #817dec;
+}
+
+#contact ul {
+  padding: 0;
+  margin-bottom: 7%;
+}
+
+#contact li {
+  display: inline;
+  margin-left: 8%;
+  margin-right: 8%;
+  font-size: 1.5rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  color: white;
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+}
+
+.logos {
+  margin-left: 15%;
+}
+
+footer a {
+  display: inline;
+  margin: 0.5em;
+}
+
+footer a img {
+  margin-top: 10px;
+  width: 2em;
+  height: 2em;
+}
+
+footer p {
+  padding: 0;
+  font-size: unset;
+  margin-right: 15%;
+  text-align: right;
 }

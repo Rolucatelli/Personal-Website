@@ -17,66 +17,100 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <!-- <table>
-        <tr>
-          <td><img id="img1" src="images/codigo.jpg" /></td>
-          <td><img id="img2" src="images/jogos.png" /></td>
-          <td><img id="img3" src="images/fpga.jpg" /></td>
-        </tr>
-      </table> -->
-      <table>
-        <tr>
-          <td id="img1" ></td>
-          <td id="img2" ></td>
-          <td id="img3" ></td>
-        </tr>
-      </table>
-      <h1 id="home">Hello! I'm Rodrigo</h1>
     </header>
+
     <main>
-      <article>
-        <h2 id="about"><u>About</u></h2>
-        <p>
-          Hi! I'm Rodrigo, a student at the Universidade Federal de Alfenas
-          (UNIFAL-MG). I'm studying Computer Science and I'm passionate about
-          programming and technology. I'm always looking for new challenges and
-          opportunities to learn and grow.
-        </p>
-      </article>
-      <article>
-        <h2 id="hobbies"><u>Hobbies</u></h2>
-        <p>
-          Besides coding, I also enjoy spending my time playing video games,
-          which I probably spend too much time on. It's something I never get
-          tired of. When I no longer find a specific game fun, I just play
-          another one.
-        </p>
-      </article>
-      <article>
-        <h2 id="projects"><u>Projects</u></h2>
+      <div id="photos">
+        <table>
+          <tr>
+            <td id="img1"></td>
+            <td id="img2"></td>
+            <td id="img3"></td>
+          </tr>
+        </table>
+        <h1 id="home">Hello, I'm Rodrigo!</h1>
+      </div>
+
+      <section id="about">
+        <h2><u>About</u></h2>
+        <div class="wrapper">
+          <p>
+            Hi! I'm Rodrigo, a student at the Universidade Federal de Alfenas
+            (UNIFAL-MG). I'm studying Computer Science and I'm passionate about
+            programming and technology. I'm always looking for new challenges
+            and opportunities to learn and grow.
+          </p>
+          <img src="images/codigo.jpg" alt="A image of code in a screen" />
+        </div>
+      </section>
+      <section id="hobbies">
+        <h2><u>Hobbies</u></h2>
+        <div class="wrapper">
+          <img
+            src="images/jogos.jpg"
+            alt="A image of a video game controller"
+          />
+          <p>
+            Besides coding, I also love playing video games. I've been playing
+            games since I was a child, like
+            <a href="https://www.minecraft.net/" target="_blank">Minecraft</a>,
+            and have always enjoyed them. Currently, the games I play the most
+            are <a href="https://playvalorant.com" target="_blank">Valorant</a>,
+            <a
+              href="https://store.steampowered.com/app/2933620/Call_of_Duty_Black_Ops_6/"
+              target="_blank"
+            >
+              Call of Duty: Black Ops 6</a
+            >, and
+            <a
+              href="https://store.steampowered.com/app/960090/Bloons_TD_6/"
+              target="_blank"
+              >Bloons TD6</a
+            >.
+          </p>
+        </div>
+        <!-- Além de escrever código, eu também adoro jogar videogame. 
+         Sempre joguei jogos desde criança e sempre os adorei. 
+         Atualmente os jogos que eu mais jogo são o Valorant, Call of Duty: Black Ops 6 e Bloons TD6. -->
+      </section>
+      <section id="projects">
+        <h2><u>Projects</u></h2>
         <p>Here are some of the projects I've worked on:</p>
         <dl>
           <dt>
             <a href="https://github.com/Rolucatelli/Interface-Hardware-Software"
-              >Programmed a processor</a
+              >1. Programmed a processor</a
             >
           </dt>
-          <dd>
-            Using Verilog, I described the hardware implementation of a 16bit
-            processor
-          </dd>
+          <div class="wrapper">
+            <img src="images/fpga_board.jpg" />
+            <dd>
+              Using
+              <abbr title="A Hardware Description Language">Verilog</abbr>, I
+              described the hardware implementation of a 16bit processor in a
+              FPGA board. It's abble to execute normal arithmetic operations
+              (besides division) and jump instructions, which allow to change
+              the flow of the program.
+            </dd>
+          </div>
           <dt>
             <a href="https://github.com/Rolucatelli/The-Pantheon-King"
-              >Made a Fighting Game</a
+              >2. Made a Fighting Game</a
             >
           </dt>
-          <dd>
-            Made a fighting game using Godot to the Course of Computer Graphics
-          </dd>
+          <div class="wrapper">
+            <dd>
+              Using <abbr title="A Game Engine">Godot</abbr>, me and my team are
+              developing a fighting game called The Pantheon King. It's a 2D
+              Pixel art game about gods fighting each other to become the king
+              of the pantheon.
+            </dd>
+            <dd><img id="gif" src="images/Untitled design.gif" /></dd>
+          </div>
         </dl>
-      </article>
-      <article>
-        <h2 id="contact"><u>Contact</u></h2>
+      </section>
+      <section id="contact">
+        <h2><u>Contact</u></h2>
         <p>If you want to get in touch, you can reach me at:</p>
         <ul>
           <li>
@@ -86,9 +120,18 @@
             >
           </li>
         </ul>
-      </article>
+      </section>
       <footer>
-        <p>© 2024 Rodrigo. All rights reserved.</p>
+        <div class="logos">
+          <a href="https://x.com/rolucatel" target="_blank"
+            ><img src="images/X Logo.png" alt="X Logo"
+          /></a>
+          <a href="https://github.com/Rolucatelli" target="_blank"
+            ><img src="images/Github Logo.png" alt="X Logo"
+          /></a>
+        </div>
+
+        <p>Made by Rodrigo Lucatelli - 2024</p>
       </footer>
     </main>
   </body>
